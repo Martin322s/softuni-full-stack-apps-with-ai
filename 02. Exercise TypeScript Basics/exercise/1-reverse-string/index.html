@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String Visualizer</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f6efe7 0%, #d7e6f3 100%);
+            color: #1f2933;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        main {
+            width: min(100%, 520px);
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 18px 45px rgba(31, 41, 51, 0.16);
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 2rem;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        label {
+            display: block;
+            margin: 20px 0 8px;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 14px;
+            border: 1px solid #bcccdc;
+            border-radius: 12px;
+            font-size: 1rem;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 14px;
+            border-radius: 12px;
+            background: #eef4ff;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Reverse String</h1>
+        <p>Type any text below and the page will run the function from the exercise to reverse it.</p>
+
+        <label for="text-input">Enter text</label>
+        <input id="text-input" type="text" placeholder="Example: hello" value="hello">
+
+        <p id="result">Reversed text: olleh</p>
+    </main>
+
+    <script src="./1-reverse-string.js"></script>
+</body>
+</html>
